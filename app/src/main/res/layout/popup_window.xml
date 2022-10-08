@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:background="@color/main3"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="100dp"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_icon2"
+            android:textColor="@color/colorWhite"
+            android:layout_marginEnd="100dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="?actionBarItemBackground"
+            android:id="@+id/closepopupwindow"
+            app:srcCompat="@drawable/cclose_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/exit_icon_select" />
+
+    </LinearLayout>
+
+
+        <GridLayout
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="7"
+            android:columnCount="4"
+            android:paddingEnd="15dp">
+
+            <ImageView android:layout_height="45dp"
+                android:id="@+id/id1"
+                android:onClick="GETICON"
+                android:src="@drawable/netflix"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="45dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/id2"
+                android:onClick="GETICON"
+                android:layout_column="1"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_row="0"
+                android:layout_width="45dp"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/instagram"
+                android:id="@+id/id3"
+                android:onClick="GETICON"
+                android:layout_column="2"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_row="0"
+                android:layout_width="45dp"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/twitter"
+                android:layout_column="3"
+                android:id="@+id/id4"
+                android:onClick="GETICON"
+                android:layout_row="0"
+                android:layout_width="45dp"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/spotify"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:id="@+id/id5"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="45dp"
+                tools:ignore="ContentDescription"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/google"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:id="@+id/id6"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/steam"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:id="@+id/id7"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/tiktok"
+                android:layout_column="3"
+                android:layout_marginTop="40dp"
+                android:layout_row="1"
+                android:id="@+id/id8"
+                android:onClick="GETICON"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/patreon"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:id="@+id/id9"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/linkedin"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:id="@+id/id10"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/amazon"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:id="@+id/id11"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/paypal"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:id="@+id/id12"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/watsapp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:id="@+id/id13"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/apple"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:id="@+id/id14"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/windows"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:id="@+id/id15"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/telekom"
+                android:layout_column="3"
+                android:id="@+id/id16"
+                android:onClick="GETICON"
+                android:layout_row="3"
+                android:layout_marginTop="40dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/mastercard"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:id="@+id/id17"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/visa"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:id="@+id/id18"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/adobe"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:id="@+id/id19"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/oracle"
+                android:layout_column="3"
+                android:layout_row="4"
+                android:id="@+id/id20"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/youtube"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:id="@+id/id21"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/twitch"
+                android:layout_column="1"
+                android:layout_row="5"
+                android:id="@+id/id22"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/discord"
+                android:layout_column="2"
+                android:layout_row="5"
+                android:id="@+id/id23"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/snapchat"
+                android:layout_column="3"
+                android:layout_row="5"
+                android:id="@+id/id24"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/tinder"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:id="@+id/id25"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="45dp"
+                android:src="@drawable/yahoo"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:id="@+id/id26"
+                android:onClick="GETICON"
+                android:layout_marginTop="40dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="45dp"
+                />
+
+            <ImageView android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_baseline_not_interested_24"
+                android:layout_column="2"
+                android:layout_row="6"
+                android:id="@+id/id27"
+                android:onClick="GETICON"
+                android:layout_marginTop="38dp"
+                tools:ignore="ContentDescription"
+                android:layout_width="50dp"
+                />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

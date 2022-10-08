@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre</item>
+        <item>@font/amiri</item>
+        <item>@font/cambay</item>
+        <item>@font/comfortaa_light</item>
+        <item>@font/days_one</item>
+        <item>@font/montaga</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>

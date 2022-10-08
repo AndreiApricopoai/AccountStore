@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accounts">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main3"
+        android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/main3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="6dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           tools:ignore="UselessParent">
+
+           <ImageView
+
+               android:background="@drawable/ripple_red"
+               android:id="@+id/exitApp"
+               android:layout_marginLeft="20dp"
+               android:layout_gravity="center_vertical"
+               android:layout_marginRight="25dp"
+               app:srcCompat="@drawable/ic_baseline_close_24"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="25dp"
+               android:contentDescription="@string/exit_app" />
+
+           <TextView
+               android:id="@+id/all"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:text="@string/all"
+               android:textSize="20sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical" />
+
+           <LinearLayout
+               android:layout_marginRight="15dp"
+               android:gravity="right"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:layout_gravity="center_vertical"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="15dp"
+               tools:ignore="RtlHardcoded">
+
+
+               <androidx.appcompat.widget.SearchView
+                   android:id="@+id/searchView"
+                   app:theme="@style/AppSearchView"
+                   android:layout_marginLeft="30dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           <ImageView
+               android:layout_gravity="center_vertical"
+               android:background="?actionBarItemBackground"
+               android:id="@+id/settings"
+               android:layout_marginLeft="15dp"
+               app:srcCompat="@drawable/ic_baseline_settings_24"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+               android:contentDescription="@string/settingss" />
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+        <ListView
+            android:divider="#efefef"
+            android:dividerHeight="1dp"
+            android:id="@+id/list"
+            android:background="@drawable/round_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#800000"
+        app:backgroundTint="#b30000"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        android:contentDescription="@string/add_item"
+        tools:ignore="RelativeOverlap,UnusedAttribute" />
+
+
+    <TextView
+        android:letterSpacing="0.1"
+        android:id="@+id/noitemsyet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="307dp"
+        android:gravity="center_horizontal"
+        android:text="@string/no_items_yet"
+        android:textAlignment="center"
+        android:textColor="#b3b3b3"
+        android:textSize="30sp"
+        app:fontFamily="@font/antic"
+        tools:targetApi="lollipop" />
+
+
+</RelativeLayout>

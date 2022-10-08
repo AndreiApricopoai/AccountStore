@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/loginBackground"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:background="@drawable/iconlogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/lego2"
+            android:contentDescription="@string/LoginLogo" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            app:fontFamily="@font/baloo"
+            android:text="@string/login"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="145dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/edittextlogin"
+                android:layout_marginRight="5dp"
+                android:paddingEnd="20dp"
+                tools:ignore="RtlSymmetry">
+
+                <ImageView
+                    android:contentDescription="@string/keyimage"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_vpn_key_black_24dp"
+                    android:layout_marginRight="3dp" />
+
+                <EditText
+                    android:maxWidth="195dp"
+                    android:autofillHints="password"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textColorHint="#d9d9d9"
+                    android:textColor="@color/black"
+                    android:hint="@string/introduce"
+                    android:id="@+id/editLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+            <ImageView
+
+                android:background="@drawable/ripple"
+                android:contentDescription="@string/eyeImageChange"
+                android:id="@+id/EyeLog"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                app:srcCompat="@drawable/ic_visibility_black_24dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/incorrect"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+
+            <Button
+                android:id="@+id/logBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/logbuttonround"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/submit"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <ImageView
+                    android:background="@drawable/ripple"
+                    android:contentDescription="@string/fingerprinticon"
+                    android:id="@+id/fingerPrint"
+                    app:srcCompat="@drawable/ic_fingerprint_black_24dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp" />
+
+
+
+                <TextView
+                    android:background="@drawable/ripple"
+                    android:id="@+id/forgotPass"
+                    android:layout_width="203dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/forgot"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

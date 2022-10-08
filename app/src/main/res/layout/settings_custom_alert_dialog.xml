@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="RtlHardcoded,UselessParent">
+    <TextView
+        android:layout_marginBottom="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:text="@string/old_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:textColor="@color/main3"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/change_pass_first_edittext"
+        android:background="@drawable/editext_settings_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/old_password_change"
+        android:textColorHint="@color/hint"
+        android:inputType="text"
+        android:autofillHints="password" />
+
+
+    <TextView
+        android:layout_marginBottom="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:text="@string/new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textColorHint="@color/hint"
+        android:textColor="@color/main3"
+        android:id="@+id/change_pass_second_edittext"
+        android:background="@drawable/editext_settings_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_password_change"
+        android:inputType="text"
+        android:autofillHints="password" />
+    </LinearLayout>
+
+
+</LinearLayout>

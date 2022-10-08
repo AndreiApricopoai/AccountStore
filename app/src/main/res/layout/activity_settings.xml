@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:background="@color/main3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:gravity="start"
+        android:background="@color/main3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+
+            <ImageView
+                android:background="?actionBarItemBackground"
+                android:id="@+id/settings_back_arrow"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/ic_baseline_navigate_before_24"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/arrow_go_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings_textview"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:fontFamily="@font/roboto"
+            tools:ignore="UnusedAttribute" />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:textSize="17sp"
+            app:fontFamily="@font/roboto"
+            android:layout_marginRight="13dp"
+            android:text="@string/skip_login_page_not_recommended"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:theme="@style/SCBSwitch"
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            app:fontFamily="@font/roboto"
+            android:textSize="17sp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/change_master_password"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp" />
+
+        <Button
+            android:id="@+id/settings_change"
+            android:background="@drawable/change_password_btn"
+            android:textSize="11sp"
+            android:text="@string/change"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            app:fontFamily="@font/roboto"
+            android:textSize="17sp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/delete_all_database_records"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp" />
+
+        <Button
+            android:id="@+id/settings_delete"
+            android:background="@drawable/reset_delete_settings"
+            android:textSize="11sp"
+            android:text="@string/delete"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            app:fontFamily="@font/roboto"
+            android:textSize="17sp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/reset_app_all_data_will_be_lost"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp" />
+
+        <Button
+            android:id="@+id/settings_reset"
+            android:background="@drawable/reset_delete_settings"
+            android:textSize="11sp"
+            android:text="@string/reset_from_settings"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/pivacy_policy"
+        android:id="@+id/privacypolicy"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_baseline_policy_24"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/privacy_policy_icon"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/privacy_policy_amp_terms_of_use"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+
+    </LinearLayout>
+
+</LinearLayout>
