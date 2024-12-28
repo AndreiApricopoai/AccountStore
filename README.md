@@ -1,6 +1,6 @@
 # AccountStore
 
-AccountStore - Password Manager is the ad-free password manager designed for your daily use.
+AccountStore - Password Manager is the add-free password manager designed for your daily use.
 
 * You only need to remember one master password and the rest is handled by the app!
 
